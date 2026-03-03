@@ -11,5 +11,9 @@ dependencies = [
     "requests>=2.32.5",
 ]
 
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
 [project.scripts]
 dreamspeaker = "dreamspeaker.app:run"
