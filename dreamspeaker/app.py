@@ -135,7 +135,11 @@ def upload():
 
 
 def run():
-    app.run(host="0.0.0.0", port=5000)
+    import argparse
+    parser = argparse.ArgumentParser(description="DreamSpeaker server")
+    parser.add_argument("--port", type=int, default=5000, help="Port to listen on (default: 5000)")
+    args = parser.parse_args()
+    app.run(host="0.0.0.0", port=args.port)
 
 
 if __name__ == "__main__":
