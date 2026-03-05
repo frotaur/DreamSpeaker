@@ -1,7 +1,7 @@
 # DreamSpeaker
 
 A backend that records dream audio, transcribes it with Whisper, cleans it up with Claude, and posts it to a Notion database.
-
+See https://github.com/frotaur/dreamspeakerapp for the associated android app.
 ## Setup
 
 ### Prerequisites
